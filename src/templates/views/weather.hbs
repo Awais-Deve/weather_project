@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      {{> meta}}
+    <title>{{title}}</title>
+  </head>
+  <body>
+      {{> navbar}} 
+
+    <section class="weather_section mt-5">
+        <div class="container">
+            <div class="inp_field">
+                <input type="text" id='city_name' placeholder="search by city name...">
+                <button id='search_btn'>search</button>
+            </div>
+            <div class="result_box mt-lg-5 mt-4 d-flex justify-content-center align-items-center">
+                <h1 class="me-3 mb-0" ><span id='show_temp'>000</span>&deg;c</h1>
+                <img src="" alt="" id='temp_img'>
+            </div>
+        </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>

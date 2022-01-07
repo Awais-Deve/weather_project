@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;}
+body,html{
+    height:100%;
+}
+nav{
+    background-color:#4a78ff;
+} 
+nav a {
+    color:#fff !important;
+}
+.navbar-brand{
+    font-size: 24px;
+    text-transform: capitalize;
+    letter-spacing:1px;
+    font-weight: 500;
+}
+.nav-link{
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 12px;
+    padding:6px 12px !important;
+}
+ul li:last-child .nav-link{
+    margin-right:0;
+}
+
+.nav-link:hover,
+.nav-link:focus{
+    background-color:#fff;
+    color:#4a78ff !important;
+    border-radius: 30px;
+}
+.navbar-toggler{
+    box-shadow: none !important;
+}
+.home_section,
+.weather_section{
+    height:89.7%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color:whitesmoke;
+}
+.weather_section{
+    height:calc(89.7% - 48px)
+}
+.weather_section{
+    align-items: flex-start;
+}
+.home_section h1{
+    font-weight: 700;
+}
+.home_section a,
+.weather_section button{
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 16px;
+    padding:8px 16px;
+    border-radius: 30px;
+    border:2px solid transparent;
+    background-color:#4a78ff;
+    color:#fff;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    transition:background-color .25s;
+}
+.home_section a:hover,
+.home_section a:focus{
+    background-color: #fff;
+    color:#4a78ff;
+    border-color: #4a78ff;
+}
+
+.weather_section .inp_field{
+    position:relative;
+}
+.weather_section input{
+    border:1px solid rgb(206, 202, 202);
+    padding:8px 16px;
+    padding-right: 100px;
+    border-radius: 30px;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+}
+.weather_section button{
+    margin-top: 0;
+    position:absolute;
+    right: 0;
+}
+@media(max-width:767px){
+    .nav-link{
+        margin-right: 0;
+    }
+    nav ul li{
+        margin-bottom: 6px;
+    }
+    nav ul li:last-child{
+        margin-bottom:0;
+    }
+}
+@media(max-width:340px) {
+    .home_section,
+    .weather_section{
+        height: auto;
+    }
+    .home_section img{
+        width: 100%;
+    }
+}
