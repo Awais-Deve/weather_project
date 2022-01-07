@@ -17,21 +17,25 @@ hbs.registerPartials(partial_path);
 
 // ROUTING  
 app.get('/',(req,res)=>{
+    res.status(200)
     res.render('index',{
         title:'Home'
     });
 });
 app.get('/about',(req,res)=>{
+    res.status(200)
     res.render('about',{
         title:'about'
     });
 });
 app.get('/weather',(req,res)=>{
+    res.status(200)
     res.render('weather',{
         title:'Weather'
     });
 });
 app.get('*',(req,res)=>{
+    res.status(404)
     res.render('404',{
         title:'404!Error'
     });
